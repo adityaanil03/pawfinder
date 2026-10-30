@@ -1,3 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f7fa;
+    color: #263238;
+    line-height: 1.6;
+}
+
+header {
+    background: #176b55;
+    color: white;
+    text-align: center;
+    padding: 30px 15px;
+}
+
+header h1 {
+    font-size: 38px;
+    margin-bottom: 8px;
+}
+
+header p {
+    font-size: 17px;
+}
+
+main {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 20px;
+    text-align: center;
+}
+
+main > h2 {
+    font-size: 30px;
+    color: #176b55;
+    margin-bottom: 12px;
+}
+
+main > p {
+    margin-bottom: 25px;
+}
+
+.actions {
+    margin: 25px 0 40px;
+}
+
+.actions a {
+    display: inline-block;
+    background: #f29f05;
+    color: white;
+    text-decoration: none;
+    padding: 13px 22px;
+    margin: 8px;
+    border-radius: 7px;
+    font-weight: bold;
+}
+
+.actions a:hover {
+    background: #d98500;
+}
+
+section {
+    background: white;
+    padding: 30px;
+    margin: 20px 0;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+}
+
+section h2 {
+    color: #176b55;
+    margin-bottom: 10px;
+}
+
 form {
     display: flex;
     flex-direction: column;
@@ -38,7 +116,27 @@ form button:hover {
     background: #10513f;
 }
 
+footer {
+    background: #263238;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
 @media (max-width: 600px) {
+    header h1 {
+        font-size: 30px;
+    }
+
+    main > h2 {
+        font-size: 24px;
+    }
+
+    .actions a {
+        display: block;
+    }
+
     form {
         width: 100%;
     }
