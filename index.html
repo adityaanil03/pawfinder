@@ -1,86 +1,13 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PawFinder | Find Your Lost Pet</title>
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-
-    <header>
-        <h1>🐾 PawFinder</h1>
-        <p>Helping lost pets find their way home.</p>
-    </header>
-
-    <main>
-        <h2>Every Pet Deserves to Find Its Way Home</h2>
-        <p>Report a missing pet or help reunite a lost pet with its family.</p>
-
-        <div class="actions">
-            <a href="#report">Report a Lost Pet</a>
-            <a href="#found">I Found a Pet</a>
-        </div>
-
-        <section id="report">
-            <h2>🐶 Report a Lost Pet</h2>
-
-            <form id="lostForm">
-                <input type="text" name="petName" placeholder="Pet Name" required>
-
-                <select name="petType" required>
-                    <option value="">Select Pet Type</option>
-                    <option>Dog</option>
-                    <option>Cat</option>
-                    <option>Other</option>
-                </select>
-
-                <input type="text" name="location" placeholder="Last Seen Location" required>
-
-                <input type="tel" name="contact" placeholder="Contact Number" required>
-
-                <textarea name="description" placeholder="Describe your pet" required></textarea>
-
-                <input type="file" name="photo" accept="image/*">
-
-                <button type="submit">Submit Lost Pet Report</button>
-            </form>
-        </section>
-
-        <section id="found">
-            <h2>🐕 Report a Found Pet</h2>
-
-            <form id="foundForm">
-                <select name="petType" required>
-                    <option value="">Select Pet Type</option>
-                    <option>Dog</option>
-                    <option>Cat</option>
-                    <option>Other</option>
-                </select>
-
-                <input type="text" name="location" placeholder="Where did you find it?" required>
-
-                <input type="tel" name="contact" placeholder="Your Contact Number" required>
-
-                <textarea name="description" placeholder="Describe the found pet" required></textarea>
-
-                <input type="file" name="photo" accept="image/*">
-
-                <button type="submit">Submit Found Pet Report</button>
-            </form>
-        </section>
-
-    </main>
-<section id="reports">
-    <h2>Recent Pet Reports 🐾</h2>
-    <div id="reportList">
-        <p>No pet reports yet.</p>
-    </div>
-</section>
-    <footer>
-        <p>© 2026 PawFinder. Made with ❤️ for pets.</p>
-    </footer>
-
-    <script src="js/script.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>pawfinder</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
 </html>
